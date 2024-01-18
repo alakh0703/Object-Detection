@@ -71,7 +71,7 @@ const ImageClassificationPage = (props: Props) => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {Object.entries(detectionResult).map(([label, count]) => (
+                                {Object.entries(!detectionResult).map(([label, count]) => (
                                     <tr key={label}>
                                         <td>{label}</td>
                                         <td>{count}</td>
