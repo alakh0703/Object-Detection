@@ -31,7 +31,7 @@ const ImageClassificationPage = (props: Props) => {
             console.log(jsonData)
             setDetectionResult(jsonData);
         } catch (error) {
-            alert("Please upload an image");
+            alert("Some Error Occurred");
             console.error("Error uploading files:", error);
         } finally {
             setLoading(false);
